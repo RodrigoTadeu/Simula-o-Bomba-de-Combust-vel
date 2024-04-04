@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div id="mainContent">
+    <form action="/abastecerEtanol" method=post>
+      <h1>Digite o valor de abastecimento</h1>
+      <label for="valor" class="p">R$:</label>
+      <input type="text" maxlength="9" id="valor" class="valor" name="valor" onkeyup="formatarMoeda()">
+
+      <input type="submit" class="btn3 first" onclick="showLoading()">
+  </form>
+
+</div>
+{% endblock %}

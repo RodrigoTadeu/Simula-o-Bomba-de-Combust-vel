@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div id="mainContent">
+    <form action="/gasolina" method=post>
+        <input type="submit" value="Gasolina" class="btn first">
+   </form>
+
+   <form action="notaFiscal">
+        <input type="submit" value="Nota Fiscal" class="btn2 first">
+   </form>
+
+    <!--<form action="/etanol" method=post>
+        <input type="submit" value="Etanol" class="btn2 first">
+  </form>-->
+  {% if flag %}
+        <script>
+            alert('Bomba de combustível em uso! Favor aguardar ...'); // Exibe o alerta somente se a variável for True
+        </script>
+    {% endif %}
+</div>
+
+{% endblock %}

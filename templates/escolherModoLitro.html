@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div id="mainContent">
+    <form action="/abastecerLitros" method=post>
+      <h1>Digite a quantidade de combustível</h1>
+      <label for="valor" class="p">Litros:</label>
+      <input type="text" maxlength="9" id="valor" class="valor" name="valor">
+
+      <input type="submit" class="btn3 first" onclick="showLoading()">
+  </form>
+
+</div>
+{% endblock %}

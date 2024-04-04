@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+ <div id="mainContent">
+    <form action="/returnHome" method=post>
+      <h1 id="mensagem">{{mensagem}}</h1>
+      <input type="submit" value="Voltar para Home"  class="btn first">
+    </form>
+
+    <form action="/baixarNotaFiscalEtanol">
+      <input type="submit" value="Baixar Nota Fiscal"  class="btn first">
+    </form>
+{% endblock %}
+
